@@ -1,0 +1,63 @@
+<! Doctype HTML>
+<html>
+    <head>
+        <title>Formulario de Campos</title>
+<LINK href="estilo.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+       <header class="estilo_bloque">
+           <img class="img-circulo" src="img/USUARIO.png">
+           <p>Bryan Joseph Chacaj Corado</p>
+       </header>
+       <div class="estilo_bloque">
+           <table>
+               <tr><td colspan="2">Datos Personales</td></tr>
+               <tr><td>BRYAN</td><td>CHACAJ</td></tr>
+               <tr><td>MARIA</td><td>MAGDALENA</td></tr>
+               <tr><td>JUAN</td><td>PEREZ</td></tr>
+           </table>
+       </div>
+       <div class="estilo_bloque">
+            <form>
+      <input type="text" name="txt_nombres" placeholder="Ingrese Nombres" value="nombres" onclick="mensaje()" id="nombres" required> 
+      <input type="text" name="txt_apellidos" placeholder="Ingrese Apellidos" value="apellidos" onclick="mensaje()" id="apellidos" required>
+      <input type="number" name="txt_telefono" placeholder="Ingrese Numero Telefonico" value="telefono" onclick="mensaje()" id="telefono" required>
+      <input type="email" name="txt_correo" placeholder="Ingrese Correo Electronico" value="correo" onclick="mensaje()" id="correo" required>
+      <input type="date" name="txt_fn" placeholder="Ingrese Fecha Nacimiento" value="fecha" onclick="mensaje()" id="fecha" required>
+      <textarea name="txt_mensaje" placeholder="Ingrese el Mensaje" value="mensaje" onclick="mensaje()" id="mensaje"></textarea>
+    <input id="btn_aceptar" type="sucess" class="boton">       
+    </form>
+       </div>
+       <div class="estilo_bloque" id="redes_sociales" >
+        <h3>Redes Sociales</h3>
+        <a href="https://github.com/"><img src="img/github.png"></a>
+        <a href="https://twitter.com/"><img src="img/twitter.png"></a>
+        <a href="https://www.pinterest.com/"><img src="img/pinterest.png"></a>
+       </div>
+
+       <script>
+      
+    var nombre = document.getElementById("nombres");
+    var apellido = document.getElementById("apellidos");
+    var telefono = document.getElementById("telefono");
+    var correo = document.getElementById("correo");
+    var fn = document.getElementById("fecha");
+    var mensaje = document.getElementById("mensaje");
+
+var btn = document.getElementById("btn_aceptar");
+btn.addEventListener("click", myFunction);
+function myFunction() {
+    alert("</br>" + nombre);
+    alert("</br>"+ apellido);
+    alert("</br>" + telefono);
+    alert("</br>" + correo);
+    alert("</br>" + fn);
+    alert("</br>" + mensaje);
+}
+    </script>
+    </body>
+    <footer>
+            <p  align=center>Aprende a Programar
+                 Fácil y Rápido &copy;</p>
+    </footer>
+</html>
